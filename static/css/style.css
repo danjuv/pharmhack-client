@@ -6,7 +6,9 @@
 .panels {
   margin-right: 10%;
 }
-
+.app-bar {
+  background-color: "#1ba1e2";
+}
 .graph {
   margin-left: 10%;
   height: 75%;
