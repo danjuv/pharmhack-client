@@ -7,8 +7,24 @@
     <div class="app-bar" style="background-color: '#1ba1e2'">
       <a class="app-bar-element branding"> <b> LeanPharm </b> </a>
     </div>
-          <h1 class="leader heading margin20">&nbsp;  <b> Overview for <i>16 April 2016 - 23 April 2016 </i> </b></h1>
-          {# <hr />#}
+          <h1 class="leader heading margin20">&nbsp;  <b> Overview for <i>16 April 2016 - 23 April 2016 </i> </b> <br>
+</h1>
+
+<div class="datpickers-to-from" style="margin-left: 40%">
+<div class="input-control text" data-role="datepicker" data-preset="2016-04-17">
+    <input id="date1" type="text">
+    <button class="button"><span class="mif-calendar"></span></button>
+</div>
+  <b> TO </b>
+<div class="input-control text" data-role="datepicker" data-preset="2016-04-24">
+    <input id="date2" type="text">
+    <button class="button"><span class="mif-calendar"></span></button>
+</div>
+</div>
+
+
+          <hr />
+
       <div class="grid panels">
         <div class="row cells2">
           <div class = "cell">
@@ -20,10 +36,37 @@
           <div class="cell">
             <div class="panel sales">
               <div class="heading">
-                <span class="title">Top Sales & Trends</span>
+                <span style=class="title">Top Sales & Trends</span>
               </div>
               <div style="background-color: #e4e4e4" class="content">
-                <div class="panel-content" > STUFF </p>
+                            <div class="tile-wide tile-wide-450 bg-cyan fg-white" data-role="tile">
+                <div class="tile-content iconic">
+                    <span id="highest-cost" class="icon mif-envelop">50</span>
+                    <span id = "highest-product" class="tile-badge bg-darkRed"> Product Name </span>
+                    <span class="tile-label">Top Selling</span>
+                </div>
+            </div>
+                            <div class="tile-wide tile-wide-450 bg-cyan fg-white" data-role="tile">
+                <div class="tile-content iconic">
+                    <span id = "trending-highest" class="icon mif-envelop">61</span>
+                    <span id="trending-highest-product" class="tile-badge bg-darkRed"> Product Name </span>
+                    <span class="tile-label">Top Trending</span>
+                </div>
+            </div>
+                            <div class="tile-wide tile-wide-450 bg-cyan fg-white" data-role="tile">
+                <div class="tile-content iconic">
+                    <span id = "lowest-cost" class="icon mif-envelop">11</span>
+                    <span id="lowest-name" class="tile-badge bg-darkRed"> Product Name </span>
+                    <span class="tile-label">Lowest Selling</span>
+                </div>
+            </div>
+                            <div class="tile-wide tile-wide-450 bg-cyan fg-white" data-role="tile">
+                <div class="tile-content iconic">
+                    <span id = "lowest-trending-cost" class="icon mif-envelop">5</span>
+                    <span id="lowest-trending-name" class="tile-badge bg-darkRed"> Product Name </span>
+                    <span class="tile-label">Lowest Trending</span>
+                </div>
+            </div>
                 </div>
               </div>
 
@@ -31,9 +74,31 @@
               <div class="heading">
                 <span class="title">Recommended Orders</span>
               </div>
-              <div style="background-color: #e4e4e4" class="content">
-                <div class="panel-content">
-                STUFF
+              <div style="background-color: #e4e4e4" class="content content-recs">
+
+                <div class="panel-content recs">
+                  <table class="table sortable-markers-on-left ords">
+    <thead>
+        <tr>
+            <th class="sortable-column">Product</th>
+            <th class="sortable-column sort-asc">Quantity</th>
+            <th class="sortable-column sort-desc">Total Unit Price</th>
+        </tr>
+        <tr>
+            <th class="sortable-column">Column</th>
+            <th class="sortable-column sort-asc">Column</th>
+            <th class="sortable-column sort-desc">Column</th>
+        </tr>
+                <tr>
+                    <th class="sortable-column">Column</th>
+                    <th class="sortable-column sort-asc">Column</th>
+                    <th class="sortable-column sort-desc">Column</th>
+                </tr>
+
+
+
+    </thead>
+</table>
                 </div>
               </div>
             </div>
