@@ -1,0 +1,11 @@
+{
+  "name": "pharmhack-client",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "latest",
+    "underscore": "latest",
+    "metro-ui": "latest",
+
+  },
+  "private": true
+}
