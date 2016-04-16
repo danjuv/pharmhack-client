@@ -21,3 +21,28 @@ $(document).ready(function() {
 
   });
 })
+
+$('#date1, #date2').change(function(event) {
+  /* Act on the event */
+  $.get("http://192.168.0.6/api/recommendedOrders?dateFrom="+date1+"&dateTo="+date2, function(data) {
+      highestProduct = "placeolder";
+      highestProductCost = 87;
+      lowestProduct = "Placeyounger";
+      lowestProductCost = 17;
+      highestTrend = "placeolder";
+      lowestTrend = "placeolder"
+      highestTrendCost = 141;
+      lowestTrendCost = 44;
+      $('#highest-cost').text(highestProductCost);
+      $('#highest-name').text(highestProduct);
+      $('#lowest-name').text(lowestProduct);
+      $('#lowest-cost').text(lowestProductCost);
+      $('#trending-highest-product').text(highestTrend);
+      $('#lowest-trending-name').text(lowestTrend);
+      $('#trending-highest-cost').text(highestTrendCost)
+      $('#trending-lowest-cost').text(lowestTrendCost)``
+
+  });
+
+
+});
