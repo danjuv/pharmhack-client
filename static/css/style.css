@@ -1,3 +1,25 @@
 .heading {
-  text-align: center;
+  /*text-align: center;*/
+  margin-top: 1%;
+}
+
+.panels {
+  margin-right: 10%;
+}
+
+.graph {
+  margin-left: 10%;
+  height: 75%;
+}
+
+.orders {
+  margin-top: 10%;
+}
+
+.panel-content {
+  padding-top: 1%;
+  margin-left: 1%;
+  min-height: 50px;
+  background-color: "#cdcdcd";
+
 }
