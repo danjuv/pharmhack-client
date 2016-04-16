@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "latest",
     "underscore": "latest",
-    "metro-ui": "latest",
+    "metro-ui": "latest"
 
   },
   "private": true
